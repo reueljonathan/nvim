@@ -1,18 +1,29 @@
-set nowrap
 set number
 set relativenumber
+set nowrap
+set splitbelow
+set splitright
+
+color PaperColor
+
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set splitbelow
-set splitright
-retab
-
+set autoindent
+set textwidth=80
+set colorcolumn=81
+set cursorline
 set foldmethod=syntax
 
-" If I am in the mood to have plugins installed.
-"call plug#begin()
+" Activate spell checking (disable with :set nospell)
+map <F2> :set spell spelllang=en_us<CR>
 
-"Plug 'morhetz/gruvbox'
+" auto reload files when changed outside vim
+set autoread
 
-"call plug#end()
+" netrw config
+" let g:netrw_browse_split = 4 " open with vertical split
+let g:netrw_preview = 1
+let g:netrw_altv = 1 " split right
+let g:netrw_winsize = 25
+let g:netrw_liststyle = 3

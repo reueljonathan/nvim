@@ -3,6 +3,7 @@ set relativenumber
 set nowrap
 set splitbelow
 set splitright
+set scrolloff=999 " align cursor vertically
 
 color PaperColor
 
